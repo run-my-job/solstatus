@@ -6,14 +6,10 @@ permissions:
   issues: write
   pull-requests: write
 
-on:
-  push:
-    branches:
-      - master
-
+on: push
 jobs:
   release-please:
-    runs-on: ubuntu-latest
+    runs-on: puzl-ubuntu-latest
     steps:
       - uses: googleapis/release-please-action@v4
         with:
